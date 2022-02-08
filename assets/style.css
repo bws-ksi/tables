@@ -1,15 +1,43 @@
-table, th, td {
+
+table, th {
+  margin: 30px;
+  border-radius: 20px;
   border: 1px solid black;
   border-collapse: collapse;
+  
 }
-caption, th, td {
-  padding: 10px;
+table, thead {
+  border: 3px solid black;
+  
 }
+
+caption {
+  font-size: 30px;
+  padding: 15px;
+}
+td {
+  padding: 5px;  
+}
+/***************/
+/** decoration**/
+/***************/
+
+td:nth-child(5), td:nth-child(6) {
+  text-align: right;
+}
+tr:nth-child(even) {
+  background: #C9E3FE
+}
+
+/***************/
+/** animation **/
+/***************/
 .notation {
   width: 300px;
   font-size: 10px;
+  transition: width 1s, font-size 1s;
 }
 .notation:hover {
   font-size: 20px;
-  width: 500px;
+  width: 500px;  
 }
