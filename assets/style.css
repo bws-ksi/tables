@@ -3,14 +3,11 @@ table, th {
   margin: 30px;
   border-radius: 20px;
   border: 1px solid black;
-  border-collapse: collapse;
-  
+  border-collapse: collapse;  
 }
 table, thead {
-  border: 3px solid black;
-  
+  border: 3px solid black;  
 }
-
 caption {
   font-size: 30px;
   padding: 15px;
@@ -22,14 +19,32 @@ td {
 /***************/
 /** decoration**/
 /***************/
-
+/** not work  
 td:nth-child(5), td:nth-child(6) {
   text-align: right;
 }
 tr:nth-child(even) {
-  background: #C9E3FE
+  background: #47e417
 }
+**/
+.europe-type>td:nth-child(6),
+.europe-type>td:nth-child(7){
+  text-align: right;
+  color: red;
+} /* работаем только с первой строкой каждого класса с учетом объединения*/
 
+tbody>tr>td:nth-child(5),
+tbody>tr>td:nth-child(6){
+  text-align: right;
+  background-color: rgb(33, 48, 184);
+} /* работаем с двумя столбцами где цифры*/
+.europe-type>td:nth-child(5){
+  background: royalblue;
+  text-align: left;
+} /* исправляем выравнивание после предыдущего правила*/
+tbody>tr:nth-child(even){
+  background: #C9E3FE;
+}
 /***************/
 /** animation **/
 /***************/
